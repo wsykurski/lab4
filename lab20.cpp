@@ -63,13 +63,9 @@ double calculate_int(char* in, int dot_pos)
     double result = 0;
     char *temp = in + dot_pos - 1;
     while(temp >= in){
-        print("temp wskazuje na: " << *temp)
-        print("Licznik wynosi " << counter)
         if (*temp-- == '1')
         {
-            print("zwiększam licznik dla: " << *temp)
             result += power_2(counter);
-            print("Wynik wynosi " << result)
         }
         ++counter;
     }
@@ -96,7 +92,6 @@ double bind2d(char *b) {
     int dot_pos=0;
     if (!check_number(b, dot_pos ))
         return -1;
-    print("Pozycja kropki wynois: " << dot_pos)
     if (dot_pos == -1)
     {
         return -1;
@@ -109,7 +104,11 @@ double bind2d(char *b) {
 int zadanie20()
 {
     print("Zadanie 20")
-    print(bind2d("1.01"));
+    print(bind2d("0.0.1"));
+    print(bind2d("c.0.1"));
+    print(bind2d("0.1"));
+    print(bind2d("01.1"));
+    print(bind2d("1101.101" ));
 }
 
 
