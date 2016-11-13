@@ -45,6 +45,8 @@ int zadanie19() {
     for (int i = 0; i < occu_size; ++i) {
         occurences[i] = 0;
     }
+    print("Zadanie19:")
+    print("Wprwadz lancuch:")
     readInput(signs, occurences);
     printResults(signs, occurences, buff_size, (int)'A', (int)'Z');
     print("");

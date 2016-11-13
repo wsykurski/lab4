@@ -62,7 +62,7 @@ int main() {
     // zadanie16();
     // zadanie17();
     // zad18();
-    // zadanie19();
-    zadanie20();
+    zadanie19();
+    // zadanie20();
     return 0;
 }
