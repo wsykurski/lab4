@@ -47,7 +47,7 @@ void  trans(int* a[], int dim)
 void multiply(int* a[], int* b[], int* c[], int dim1, int dim2, int dim3)
 {
     for (int i = 0; i < dim1; ++i) {
-        for (int j = 0; j < dim2; ++j) {
+        for (int j = 0; j < dim3; ++j) {
             for (int k = 0; k < dim2; ++k) {
                 c[i][j] += a[i][k] * b[k][j];
             }
