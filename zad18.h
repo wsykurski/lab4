@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "macros.h"
+#include "common.h"
 #include <limits>
 using namespace std;
 

@@ -56,7 +56,6 @@ void multiply(int* a[], int* b[], int* c[], int dim1, int dim2, int dim3)
             c[i][j] = row;
         }
     }
-    print_table_2d(c,2,2);
 }
 
 int zadanie17()
@@ -111,5 +110,6 @@ int zadanie17()
         c[0] = new int[2] {0, 2};
         c[1] = new int[2] {0, 2};
         multiply(a, b, c, 2, 3 ,2);
+        print_table_2d(c,2,2);
     }
 }

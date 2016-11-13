@@ -53,11 +53,7 @@ void zad18() {
   int b[] = {2, 4, 5, 8};
   mix(a, 6, b, 4);
   print("Tablica A:")
-  for (int i = 0; i < 6; ++i) {
-    print(a[i])
-  }
+  print_table_1d(a, 6);
   print("Tablica B:")
-  for (int i = 0; i < 4; ++i) {
-    print(b[i])
-  }
+  print_table_1d(a, 4);
 }
