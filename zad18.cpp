@@ -35,16 +35,17 @@ void mix(int* a, int m, int* b, int n)
     }
     _pb++;
   }
-  _pb = b;
 
   counter = 0;
   while(counter < m)
   {
-    *_pa++ = temp[counter++];
+    *a++ = temp[counter++];
   }
   while (counter < m + n)
-    *_pb++ = temp[counter++];
-
+  {
+    print(counter)
+    *b++ = temp[counter++];
+  }
   delete [] temp;
 }
 
@@ -55,5 +56,5 @@ void zad18() {
   print("Tablica A:")
   print_table_1d(a, 6);
   print("Tablica B:")
-  print_table_1d(a, 4);
+  print_table_1d(b, 4);
 }
