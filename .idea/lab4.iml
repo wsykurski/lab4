@@ -2,11 +2,19 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lab19.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab19.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/common.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zad17.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/macros.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lab20.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab20.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/macros.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zad18.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zad17.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lab20.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/common.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/zad18.cpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
