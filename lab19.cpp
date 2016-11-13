@@ -39,7 +39,7 @@ int zadanie19() {
     const int occu_size = (int)'z' - int('A') + 1;
     int signs[buff_size];
     for (int i = 0; i < buff_size; ++i) {
-       signs[i] = -1;
+        signs[i] = -1;
     }
     int occurences[ occu_size];
     for (int i = 0; i < occu_size; ++i) {
