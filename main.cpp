@@ -2,6 +2,7 @@
 #include "macros.h"
 #include "lab20.h"
 #include "lab19.h"
+#include "zad18.h"
 using namespace std;
 
 #define print(x) cout << x << endl;
@@ -123,6 +124,7 @@ int main() {
     // zadanie16();
     // zadanie17();
     // zadanie20();
-    zadanie19();
+    // zadanie19();
+    zad18();
     return 0;
 }

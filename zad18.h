@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "macros.h"
+#include <limits>
 using namespace std;
 
 void zad18();
