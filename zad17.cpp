@@ -11,9 +11,9 @@ void readrow(int* tab, int dim2)
 
 void fill(int* a[], int dim1, int dim2)
 {
-    while(dim1 > 0)
+    while(dim1-- > 0)
     {
-        print("  Wprowadzanie wiersza " << dim1--)
+        print("  Wprowadzanie wiersza ")
         readrow(*a++, dim2);
     }
 }
@@ -34,6 +34,7 @@ void  trans(int* a[], int dim)
     }
     else
     {
+        print("Macierz NIE JEST symetryczna!")
         print("Transpozycja macierzy:")
         for (int i = 0; i < dim; ++i) {
             for (int j = 0; j < i; ++j) {
@@ -73,40 +74,44 @@ int zadanie17()
     //     }
     //     delete[] a;
     // }
-    // print("17c")
-    // {
-    //     int **a = new int*[4];
-    //     for (int i = 0; i < 4; ++i) {
-    //         a[i] = new int[4];
-    //         for (int j = 0; j < 4; ++j) {
-    //             a[i][j] = 1;
-    //         }
-    //     }
-    //     int **b = new int*[3];
-    //     b[0] = new int[3] {1, 1, 3};
-    //     b[1] = new int[3] {1, 2, 1};
-    //     b[2] = new int[3] {0, 1, 1};
-    //     //randomize_table_2d(a, 4, 4);
-    //     print_table_2d(a, 4, 4);
-    //     trans(a, 4);
-    //     print_table_2d(b, 3, 3);
-    //     trans(b, 3);
-    //     print_table_2d(b, 3, 3);
-    // }
-    print("17d")
+    print("17c")
     {
-        int **a = new int*[2];
-        a[0] = new int[3] {1,  0, 2};
-        a[1] = new int[3] {-1, 3, 1};
-
+        int **a = new int*[4];
+        // for (int i = 0; i < 4; ++i) {
+        //     a[i] = new int[4];
+        //     for (int j = 0; j < 4; ++j) {
+        //         a[i][j] = 1;
+        //     }
+        // }
+        a[0] = new int[4] { 1, 2, 0, 1};
+        a[1] = new int[4] { 2, 1, 0, 1};
+        a[2] = new int[4] { 0, 0, 1, 0};
+        a[3] = new int[4] { 1, 1, 0, 1};
         int **b = new int*[3];
-        b[0] = new int[2] {3, 1};
-        b[1] = new int[2] {2, 1};
-        b[2] = new int[2] {1, 0};
-        int **c = new int*[2];
-        c[0] = new int[2] {0, 0};
-        c[1] = new int[2] {0, 0};
-        multiply(a, b, c, 2, 3 ,2);
-        print_table_2d(c,2,2);
+        b[0] = new int[3] {1, 1, 3};
+        b[1] = new int[3] {1, 2, 1};
+        b[2] = new int[3] {0, 0, 1};
+        //randomize_table_2d(a, 4, 4);
+        print_table_2d(a, 4, 4);
+        trans(a, 4);
+        print_table_2d(b, 3, 3);
+        trans(b, 3);
+        print_table_2d(b, 3, 3);
     }
+    // print("17d")
+    // {
+    //     int **a = new int*[2];
+    //     a[0] = new int[3] {1,  0, 2};
+    //     a[1] = new int[3] {-1, 3, 1};
+
+    //     int **b = new int*[3];
+    //     b[0] = new int[2] {3, 1};
+    //     b[1] = new int[2] {2, 1};
+    //     b[2] = new int[2] {1, 0};
+    //     int **c = new int*[2];
+    //     c[0] = new int[2] {0, 0};
+    //     c[1] = new int[2] {0, 0};
+    //     multiply(a, b, c, 2, 3 ,2);
+    //     print_table_2d(c,2,2);
+    // }
 }

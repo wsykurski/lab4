@@ -35,7 +35,7 @@ int zadanie16()
         randomize_table_1d(tab, tab_size);
         print("Tablica przed zmianą:")
         print_table_1d(tab, tab_size);
-        erase(tab, 5, tab_size);
+        erase(tab, 2, tab_size);
         print("tablica po zmianie:")
         print_table_1d(tab, tab_size);
         delete tab;
@@ -60,9 +60,9 @@ int zadanie16()
 int main() {
     print("Laboratorium 4")
     // zadanie16();
-    // zadanie17();
+    zadanie17();
     // zad18();
-    zadanie19();
+    // zadanie19();
     // zadanie20();
     return 0;
 }
