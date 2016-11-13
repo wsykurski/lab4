@@ -46,14 +46,11 @@ void  trans(int* a[], int dim)
 
 void multiply(int* a[], int* b[], int* c[], int dim1, int dim2, int dim3)
 {
-    int row=0;
     for (int i = 0; i < dim1; ++i) {
-        for (int j = 0; j < dim3; ++j) {
-            row = 0;
+        for (int j = 0; j < dim2; ++j) {
             for (int k = 0; k < dim2; ++k) {
-                row += a[i][k] * b[k][i];
+                c[i][j] += a[i][k] * b[k][j];
             }
-            c[i][j] = row;
         }
     }
 }
@@ -107,8 +104,8 @@ int zadanie17()
         b[1] = new int[2] {2, 1};
         b[2] = new int[2] {1, 0};
         int **c = new int*[2];
-        c[0] = new int[2] {0, 2};
-        c[1] = new int[2] {0, 2};
+        c[0] = new int[2] {0, 0};
+        c[1] = new int[2] {0, 0};
         multiply(a, b, c, 2, 3 ,2);
         print_table_2d(c,2,2);
     }
