@@ -61,8 +61,8 @@ int main() {
     print("Laboratorium 4")
     // zadanie16();
     // zadanie17();
-    // zadanie20();
+    // zad18();
     // zadanie19();
-    zad18();
+    zadanie20();
     return 0;
 }

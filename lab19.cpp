@@ -31,13 +31,6 @@ void printResults(int *in, int *occurences, int buff_size, int start, int stop) 
             *temp = 0;
         }
         *in++;
-        //*in++;
-       // print("wykonuję while'a")
-       // print(*in)
-       // if(occurences[*in] != 0)
-       // {
-       //     print((char)( *in + (int)'A' ) << ": " << occurences[*in++])
-       // }
     }
 }
 

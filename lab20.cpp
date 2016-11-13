@@ -105,7 +105,7 @@ int zadanie20()
 {
     print("Zadanie 20")
     print(bind2d("0.0.1"));
-    print(bind2d("c.0.1"));
+    print(bind2d("c0.1"));
     print(bind2d("0.1"));
     print(bind2d("01.1"));
     print(bind2d("1101.101" ));
